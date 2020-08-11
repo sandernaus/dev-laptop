@@ -82,3 +82,9 @@ vagrant plugin install vagrant-rsync-back
 vagrant plugin install  vagrant-serverspec
 vagrant plugin install  vagrant-vbguest
 ```
+
+## Git config
+
+```cmd
+git config user.name "My Name" --global
+git config user.email "my@email.com" --global
