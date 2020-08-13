@@ -18,14 +18,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
 * Microsoft ToDo
 
 ```cmd
-choco install git --params "/NoAutoCrlf"
-choco install vscode --params "/NoDesktopIcon"
-choco install microsoft-windows-terminal
-choco install whatsapp
-choco install spotify
-choco install microsoft-edge
-choco install 7zip
-choco install virtualbox --params "/NoDesktopShortcut /ExtensionPack"
+choco install git -y --params "/NoAutoCrlf"
+choco install vscode -y --params "/NoDesktopIcon"
+choco install microsoft-windows-terminal -y
+choco install whatsapp -y
+choco install spotify -y
+choco install microsoft-edge -y
+choco install 7zip -y
+choco install python -y
+choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
 
 code --install-extension Shan.code-settings-sync
 
@@ -33,8 +34,8 @@ vagrant plugin install vagrant-rsync-back
 vagrant plugin install vagrant-serverspec
 vagrant plugin install vagrant-vbguest
 
-git config user.name "My Name" --global
-git config user.email "my@email.com" --global
+git config --global user.name "My Name"
+git config --global user.email "my@email.com"
 ```
 
 ## Configure Visual Studio Code
