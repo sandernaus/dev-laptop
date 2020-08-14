@@ -26,6 +26,7 @@ choco install spotify -y
 choco install microsoft-edge -y
 choco install 7zip -y
 choco install python -y
+choco install postman -y
 choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
 
 code --install-extension Shan.code-settings-sync
