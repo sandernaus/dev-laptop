@@ -79,6 +79,13 @@ Launch Ubuntu from start menu for username and password configuration
 
 For configuring a proxy in WSL, refer to this [document](cntlm.md)
 
+### TODO: Section for installing packages in WSL
+
+* Ansible
+* ansible-lint
+* Python 3
+* yamllint
+
 ## Configure Windows Terminal
 
 ### Configure settings
