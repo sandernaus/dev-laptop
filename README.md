@@ -22,6 +22,7 @@ choco install git -y --params "/NoAutoCrlf"
 choco install vscode -y --params "/NoDesktopIcon"
 choco install microsoft-windows-terminal -y
 choco install whatsapp -y
+choco install telegram -y
 choco install spotify -y
 choco install microsoft-edge -y
 choco install 7zip -y
