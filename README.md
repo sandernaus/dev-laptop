@@ -28,6 +28,8 @@ choco install microsoft-edge -y
 choco install 7zip -y
 choco install python -y
 choco install postman -y
+choco install rsat -y -params '"/AD /GP /DNS /FS"'
+choco install azure-cli -y
 choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
 
 code --install-extension Shan.code-settings-sync
@@ -38,6 +40,12 @@ vagrant plugin install vagrant-vbguest
 
 git config --global user.name "My Name"
 git config --global user.email "my@email.com"
+
+ssh-keygen -t rsa -C  "my@email.com"
+
+Install-Module Az -AllowClobber
+Install-Module Azure -AllowClobber
+Install-Module AzureRM -AllowClobber
 ```
 
 ## Configure Visual Studio Code
