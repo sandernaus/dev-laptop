@@ -31,6 +31,7 @@ choco install postman -y
 choco install rsat -y -params '"/AD /GP /DNS /FS"'
 choco install azure-cli -y
 choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
+choco install vagrant
 
 code --install-extension Shan.code-settings-sync
 
