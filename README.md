@@ -31,9 +31,9 @@ choco install postman -y
 choco install rsat -y -params '"/AD /GP /DNS /FS"'
 choco install azure-cli -y
 choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
-choco install vagrant
-
-code --install-extension Shan.code-settings-sync
+choco install vagrant -y
+choco install awscli -y
+choco install nodejs -y
 
 vagrant plugin install vagrant-rsync-back
 vagrant plugin install vagrant-serverspec
@@ -47,6 +47,9 @@ ssh-keygen -t rsa -C  "my@email.com"
 Install-Module Az -AllowClobber
 Install-Module Azure -AllowClobber
 Install-Module AzureRM -AllowClobber
+
+pip install git-remote-codecommit
+pip install cfn-lint
 ```
 
 ## Configure Visual Studio Code
@@ -58,7 +61,7 @@ Configure VS Code Settings Sync plugin
 Check the Windows version by executing following command from command prompt
 
 ```cmd
-ver
+winver
 ```
 
 WSL 2 requires: Windows 10, updated to version 2004, Build 19041 or higher.
