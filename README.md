@@ -26,7 +26,7 @@ choco install telegram -y
 choco install spotify -y
 choco install microsoft-edge -y
 choco install 7zip -y
-choco install python -y
+choco install python3 -y
 choco install postman -y
 choco install rsat -y -params '"/AD /GP /DNS /FS"'
 choco install azure-cli -y
@@ -34,6 +34,9 @@ choco install virtualbox -y --params "/NoDesktopShortcut /ExtensionPack"
 choco install vagrant -y
 choco install awscli -y
 choco install nodejs -y
+choco install terraform -y
+choco install terraform-docs -y
+
 
 vagrant plugin install vagrant-rsync-back
 vagrant plugin install vagrant-serverspec
@@ -48,13 +51,15 @@ Install-Module Az -AllowClobber
 Install-Module Azure -AllowClobber
 Install-Module AzureRM -AllowClobber
 
-pip install git-remote-codecommit
-pip install cfn-lint
+pip3 install git-remote-codecommit
+pip3 install cfn-lint
+
+npm i -g tfx-cli
 ```
 
 ## Configure Visual Studio Code
 
-Configure VS Code Settings Sync plugin
+Configure VS Code Settings Sync
 
 ## Installing WSL
 
