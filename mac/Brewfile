@@ -1,0 +1,30 @@
+## Source Repos
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/cask-versions"
+
+# Non-technical Tools
+cask "firefox"
+cask "google-chrome"
+cask "microsoft-edge"
+cask "whatsapp"
+cask "telegram"
+cask "spotify"
+
+# Technical Tools
+cask "visual-studio-code"
+cask "powershell"
+cask "powershell-preview"
+cask "iterm2"
+cask "postman"
+cask "dotnet"
+brew "kubernetes-cli"
+brew "docker"
+brew "nmap"
+brew "watch"
+brew "node"
+brew "azure-cli"
+brew "awscli"
+brew "python"
+brew "pyenv"

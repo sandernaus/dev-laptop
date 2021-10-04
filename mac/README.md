@@ -15,27 +15,10 @@ xcode-select —-install
 
 ## Install BREW Packages
 
+Run the following command from within the folder of the `Brewfile`
+
 ```bash
-brew install bundle
-brew install cask
-brew install core
-brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask telegram
-brew install --cask visual-studio-code
-brew install --cask whatsapp
-brew install --cask spotify
-brew install --cask microsoft-edge
-brew install --cask powershell
-brew install --cask postman
-brew install --cask dotnet
-brew install python
-brew install azure-cli
-brew install awscli
-brew install node
-brew install docker
-brew install --cask iterm2
-brew install pyenv
+brew bundle
 ```
 
 ## Install Oh My ZSH
@@ -57,6 +40,10 @@ cd fonts
 
 ./install.sh
 ```
+
+## Install PowerShell Depenencies
+
+<https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.1#installing-dependencies>
 
 ## Install PowerShell Modules
 
