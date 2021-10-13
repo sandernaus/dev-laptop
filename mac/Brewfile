@@ -28,3 +28,5 @@ brew "azure-cli"
 brew "awscli"
 brew "python"
 brew "pyenv"
+brew "terraform-docs"
+#brew "terraform" # 0.14.7 is not available in BREW
