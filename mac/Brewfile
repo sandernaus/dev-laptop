@@ -12,6 +12,8 @@ cask "whatsapp"
 cask "telegram"
 cask "spotify"
 cask "keepassx"
+cask "lastpass"
+cask "amazon-chime"
 
 # Technical Tools
 cask "visual-studio-code"
@@ -30,5 +32,6 @@ brew "azure-cli"
 brew "awscli"
 brew "python"
 brew "pyenv"
+brew "ansible"
 brew "terraform-docs"
 #brew "terraform" # 0.14.7 is not available in BREW
