@@ -41,5 +41,7 @@ brew "awscli"
 brew "python"
 brew "pyenv"
 brew "ansible"
+brew "yarn"
 brew "terraform-docs"
+brew "cdktf"
 #brew "terraform" # 0.14.7 is not available in BREW
