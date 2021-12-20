@@ -59,6 +59,7 @@ Install-Module AzureRM -AllowClobber
 ```bash
 npm i -g tfx-cli
 npm install aws-cdk
+npm install -g aws-sso-cli
 ```
 
 ## Install Python packages
@@ -81,9 +82,20 @@ git config --global pull.rebase false
 
 Configure VS Code Settings Sync
 
+## .zshrc
+
+```bash
+aws-sso-cli() {
+  command aws-sso-cli "$@" | while read -r line; do
+    if [[ $line =~ ^export ]]; then
+      eval $line
+    fi
+  done
+}
+```
+
 ## TODO
 
-* terraform
 * terraform-docs
 * Configure default env. variables
 
