@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-versions"
+tap aws/tap
 
 # Non-technical Tools
 cask "firefox"
@@ -50,3 +51,4 @@ brew "terraform@1.0.11"
 brew "telnet"
 brew "jq"
 cask "tunnelblick"
+brew "aws-sam-cli"
