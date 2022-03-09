@@ -67,6 +67,7 @@ npm install -g aws-sso-cli
 ```bash
 pip3 install git-remote-codecommit
 pip3 install cfn-lint
+pip3 install taskcat
 
 ```
 
