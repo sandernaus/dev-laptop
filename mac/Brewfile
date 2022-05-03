@@ -3,7 +3,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-versions"
-tap aws/tap
+tap "aws/tap"
+tap "azure/bicep"
 
 # Non-technical Tools
 cask "firefox"
@@ -52,3 +53,4 @@ brew "telnet"
 brew "jq"
 cask "tunnelblick"
 brew "aws-sam-cli"
+brew  "bicep"
