@@ -25,6 +25,7 @@ cask "handbrake"
 cask "plex"
 cask "vlc"
 cask "rectangle"
+brew "mpv"
 
 # Technical Tools
 cask "visual-studio-code"

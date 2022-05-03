@@ -1,4 +1,4 @@
-# Windows Development Laptop
+# Mac Development Laptop
 
 This readme holds my notes for setting up a new development laptop,
 using all the tools applicable for my current projects.
