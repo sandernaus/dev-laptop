@@ -28,6 +28,8 @@ cask "rectangle"
 brew "mpv"
 brew "maccy"
 brew "cheatsheet"
+brew "drawio"
+
 
 # Technical Tools
 cask "visual-studio-code"
@@ -57,3 +59,4 @@ brew "jq"
 cask "tunnelblick"
 brew "aws-sam-cli"
 brew  "bicep"
+brew "git"

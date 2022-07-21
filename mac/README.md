@@ -77,6 +77,7 @@ pip3 install taskcat
 git config --global user.name "<NAME>"
 git config --global user.email "<E-mail>"
 git config --global pull.rebase false
+git config --global --add --bool push.autoSetupRemote true
 ```
 
 ## Configure Visual Studio Code
