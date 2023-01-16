@@ -68,6 +68,8 @@ npm install -g aws-sso-cli
 pip3 install git-remote-codecommit
 pip3 install cfn-lint
 pip3 install taskcat
+pip3 install detect-secrets
+pip3 install pre-commit
 
 ```
 
