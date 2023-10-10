@@ -130,19 +130,27 @@ Invoke-WebRequest -Uri `
 
 .\install.ps1
 
+rm fonts
 
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+
+#Install-Module posh-git -Scope CurrentUser
+#Install-Module oh-my-posh -Scope CurrentUser
 
 # Start the default settings (might not work so optional)
-Set-Prompt
+#Set-Prompt
 # To enable the engine edit your PowerShell profile, run
-notepad $PROFILE
+#notepad $PROFILE
 # and append the following lines to the profile file you just opened (or created
 # in case the file was not there already):
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-Theme Paradox
+#Import-Module posh-git
+#Import-Module oh-my-posh
+#Set-Theme Paradox
+
+
+winget install JanDeDobbeleer.OhMyPosh -s winget
+oh-my-posh init pwsh --config 'C:\Users\%username%\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
+
+git config --global core.autocrlf false
 ```
 
 WSL Configuration in Windows Terminal:
