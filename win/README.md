@@ -148,7 +148,14 @@ rm fonts
 
 
 winget install JanDeDobbeleer.OhMyPosh -s winget
+
+# To enable the engine edit your PowerShell profile, run
+#notepad $PROFILE
+# and append the following lines to the profile file you just opened (or created
+# in case the file was not there already):
 oh-my-posh init pwsh --config 'C:\Users\%username%\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 git config --global core.autocrlf false
 ```
