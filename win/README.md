@@ -145,7 +145,10 @@ rm fonts
 #Import-Module posh-git
 #Import-Module oh-my-posh
 #Set-Theme Paradox
+oh-my-posh init pwsh --config 'C:\Users\<username>\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
 
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 winget install JanDeDobbeleer.OhMyPosh -s winget
 
