@@ -47,9 +47,9 @@ git config --global user.email "my@email.com"
 
 ssh-keygen -t rsa -C  "my@email.com"
 
-Install-Module Az -AllowClobber
-Install-Module Azure -AllowClobber
-Install-Module AzureRM -AllowClobber
+Install-Module Az -AllowClobber -Scope CurrentUser
+Install-Module Azure -AllowClobber -Scope CurrentUser
+Install-Module AzureRM -AllowClobber -Scope CurrentUser
 
 pip3 install git-remote-codecommit
 pip3 install cfn-lint
