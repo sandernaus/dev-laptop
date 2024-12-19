@@ -7,7 +7,7 @@ All steps are based on Windows 10 machine.
 ## Install Chocolatey
 
 ```powershell
-Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy AllSigned -Scope CurrentUser
 Set-ExecutionPolicy Bypass -Scope Process -Force; `
   [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol `
   -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -130,11 +130,10 @@ Invoke-WebRequest -Uri `
 
 .\install.ps1
 
-rm fonts
+winget install JanDeDobbeleer.OhMyPosh -s winget
+Install-Module posh-git -Scope CurrentUser
 
-
-#Install-Module posh-git -Scope CurrentUser
-#Install-Module oh-my-posh -Scope CurrentUser
+oh-my-posh font install
 
 # Start the default settings (might not work so optional)
 #Set-Prompt
@@ -142,20 +141,8 @@ rm fonts
 #notepad $PROFILE
 # and append the following lines to the profile file you just opened (or created
 # in case the file was not there already):
-#Import-Module posh-git
-#Import-Module oh-my-posh
+Import-Module posh-git
 #Set-Theme Paradox
-oh-my-posh init pwsh --config 'C:\Users\<username>\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
-
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
-
-winget install JanDeDobbeleer.OhMyPosh -s winget
-
-# To enable the engine edit your PowerShell profile, run
-#notepad $PROFILE
-# and append the following lines to the profile file you just opened (or created
-# in case the file was not there already):
 oh-my-posh init pwsh --config 'C:\Users\%username%\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
