@@ -135,6 +135,8 @@ Install-Module posh-git -Scope CurrentUser
 
 oh-my-posh font install
 
+Install-Module PSReadLine -Force -Scope CurrentUser
+
 # Start the default settings (might not work so optional)
 #Set-Prompt
 # To enable the engine edit your PowerShell profile, run
